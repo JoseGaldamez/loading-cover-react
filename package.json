@@ -1,0 +1,21 @@
+{
+  "name": "loading-cover-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jose Galdamez <josegaldamez1991@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.11.0"
+},
+  "devDependencies": {
+    "@types/react": "^18.2.22",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
+  }
+}
