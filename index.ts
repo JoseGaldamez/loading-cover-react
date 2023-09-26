@@ -1,3 +1,2 @@
-export { LoadingCover } from "./src/index";
-
-export { useLoadingCoverState } from "./src/hooks/useLoadingCoverState";
+export { LoadingCover } from "./src/";
+export { useLoadingCover } from "./src/hooks/useLoadingCoverState";

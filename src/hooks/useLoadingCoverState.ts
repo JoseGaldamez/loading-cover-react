@@ -1,15 +1,41 @@
 import { useState } from "react";
+import { singletonHook } from "react-singleton-hook";
 
-export const useLoadingCoverState = () => {
-    const [isLoading, setIsLoading] = useState(false);
+const init = {
+    isLoading: false,
+    hideLoadingCover: () => {},
+    showLoadingCover: () => {},
+    toggleLoadingCover: () => {},
+};
+
+export const useLoadingCoverStateImplementation = () => {
+    const [isLoading, setIsLoading] = useState(init.isLoading);
 
     const hideLoadingCover = () => {
-        setIsLoading(false);
+        if (isLoading) {
+            setIsLoading(false);
+        }
     };
 
     const showLoadingCover = () => {
-        setIsLoading(true);
+        if (!isLoading) {
+            setIsLoading(true);
+        }
     };
 
-    return { isLoading, hideLoadingCover, showLoadingCover };
+    const toggleLoadingCover = () => {
+        setIsLoading(!isLoading);
+    };
+
+    return {
+        isLoading,
+        hideLoadingCover,
+        showLoadingCover,
+        toggleLoadingCover,
+    };
 };
+
+export const useLoadingCover = singletonHook(
+    init,
+    useLoadingCoverStateImplementation
+);
