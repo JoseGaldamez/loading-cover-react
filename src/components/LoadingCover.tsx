@@ -5,7 +5,7 @@ import { iLoadingCover } from '../interfaces/ILoadingCover.interface';
 export const LoadingCoverComponent = (props: iLoadingCover) => {
 
     return (
-        <div className='background__transparent'>
+        <div className='loading_cover_react-background__transparent'>
             {props.text}
         </div>
     )
