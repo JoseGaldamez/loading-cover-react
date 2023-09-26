@@ -1,5 +1,5 @@
 import React from 'react'
-import './LoadingCover.css';
+import './LoadingCoverCSS.css';
 import { iLoadingCover } from '../interfaces/ILoadingCover.interface';
 
 export const LoadingCoverComponent = (props: iLoadingCover) => {

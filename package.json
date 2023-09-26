@@ -1,6 +1,6 @@
 {
   "name": "loading-cover-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show and Hide a Loading cover on ReactJS applications.",
   "main": "index.ts",
   "scripts": {
