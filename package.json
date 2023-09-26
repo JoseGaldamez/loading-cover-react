@@ -1,13 +1,15 @@
 {
   "name": "loading-cover-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Show and Hide a Loading cover on ReactJS applications.",
   "main": "index.ts",
   "scripts": {
     "build": "npx tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "loader", "loading", "cover", "reactjs", "react", "typescript"
+  ],
   "author": "Jose Galdamez <josegaldamez1991@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
@@ -20,5 +22,13 @@
   },
   "dependencies": {
     "react-singleton-hook": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseGaldamez/loading-cover-react"
+  },
+  "bugs": {
+    "url": "https://github.com/JoseGaldamez/loading-cover-react/issues"
+  },
+  "homepage": "https://github.com/JoseGaldamez/loading-cover-react"
 }
